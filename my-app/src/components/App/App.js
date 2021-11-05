@@ -18,7 +18,7 @@ function App() {
           <Route path='/add'>
             <NewItemView/>
           </Route>
-          </Switch>
+      </Switch>
     </main>
   </div>
   );
