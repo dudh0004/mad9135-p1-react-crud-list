@@ -23,6 +23,16 @@ export default function ListView(props) {
         setUsers(list);
     }    
 
+    const onSave = (e) => {
+        e.preventDefault();
+    
+        setUsers([...users]);
+        console.log(users);
+        localStorage.setItem('dudh0004', JSON.stringify(users));
+        console.log("localstorage updated");
+        setId(0);
+    };
+
 
     const handleChange = (e) => {
     
@@ -73,7 +83,7 @@ export default function ListView(props) {
                                 </p>
                             </div>
                             <div className="formButton">
-                                <button>Save</button>
+                                <button onClick={onSave}>Save</button>
                                 <button>Cancel</button>
                             </div>
                         </form>
