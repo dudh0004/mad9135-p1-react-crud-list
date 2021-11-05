@@ -1,10 +1,16 @@
-import userData from '../../userData.json';
+import userData from '../userData.json';
 import { useState } from "react";
 import './ListView.css';
 
 export default function ListView(props) {
-    let[users, setUsers] = useState(userData);
-    let [data, setData] = useState(userData);
+    let localData = JSON.parse(localStorage.getItem(('dudh0004')));
+
+    if(!localData) {
+        localStorage.setItem('dudh0004', JSON.stringify(userData));
+    }
+
+    let[users, setUsers] = useState(localData);
+    let [data, setData] = useState(localData);
     let [id, setId] = useState(0);
     let editClicked = false;
         
@@ -21,8 +27,9 @@ export default function ListView(props) {
         })
 
         setUsers(list);
-    }    
-
+        localStorage.setItem('dudh0004', JSON.stringify(list));
+    }
+    
     const onSave = (e) => {
         e.preventDefault();
     
@@ -32,7 +39,6 @@ export default function ListView(props) {
         console.log("localstorage updated");
         setId(0);
     };
-
 
     const handleChange = (e) => {
     
@@ -46,7 +52,7 @@ export default function ListView(props) {
         
         setData(data);
     };
-
+    
     const noChange = (e) => {
         let userName = document.getElementById('name').defaultValue;
         let userEmail = document.getElementById('Email').defaultValue;
@@ -60,7 +66,7 @@ export default function ListView(props) {
             users.City = userCity;
             setId(0);
     }
-
+    
 
     return (
         <div className = "main">
@@ -83,27 +89,26 @@ export default function ListView(props) {
                     </div>
                         ) : (
                             <form className="editUserForm">
-                            <div className="inputData">
-                                <p>
-                                    <label>Name:</label>
-                                    <input className="editUserName" name="name" id="name" onChange={handleChange} defaultValue = {item.name}></input>
-                                </p>
-                                <p>
-                                    <label>Email:</label>
-                                    <input className="editUserEmail" name="Email" id="Email" onChange={handleChange} defaultValue = {item.Email}></input>
-                                </p>
-                                <p>
-                                    <label>City:</label>
-                                    <input className="editUserCity" name="City" id="City" onChange={handleChange} defaultValue = {item.City}></input>
-                                </p>
-                            </div>
-                            <div className="formButton">
-                                <button onClick={onSave}>Save</button>
-                                <button onClick={noChange}>Cancel</button>
-                            </div>
-                        </form>
-
-                        )
+                                <div className="inputData">
+                                    <p>
+                                        <label>Name:</label>
+                                        <input className="editUserName" name="name" id="name" onChange={handleChange} defaultValue = {item.name}></input>
+                                    </p>
+                                    <p>
+                                        <label>Email:</label>
+                                        <input className="editUserEmail" name="Email" id="Email" onChange={handleChange} defaultValue = {item.Email}></input>
+                                    </p>
+                                    <p>
+                                        <label>City:</label>
+                                        <input className="editUserCity" name="City" id="City" onChange={handleChange} defaultValue = {item.City}></input>
+                                    </p>
+                                </div>
+                                <div className="formButton">
+                                    <button onClick={onSave}>Save</button>
+                                    <button onClick={noChange}>Cancel</button>
+                                </div>
+                            </form>
+                            )
                     }
                     </>
                 ))
