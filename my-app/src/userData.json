@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Bob",
+        "Email": "bob@gmail.com",
+        "City": "Ottawa"
+    },
+    {
+        "id": 2,
+        "name": "Tim",
+        "Email": "Tim1@gmail.com",
+        "City": "Halifax"
+    },
+    {
+        "id": 3,
+        "name": "Cale",
+        "Email": "cale@gmail.com",
+        "City": "Vancouver"
+    },
+    {
+        "id": 4,
+        "name": "Vishva",
+        "Email": "Vishva@gmail.com",
+        "City": "Rajkot"
+    },
+    {
+        "id": 5,
+        "name": "Monika",
+        "Email": "monika@gmail.com",
+        "City": "Rajkot"
+    }
+]
