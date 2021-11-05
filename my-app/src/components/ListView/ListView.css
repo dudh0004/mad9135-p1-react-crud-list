@@ -11,3 +11,21 @@
     padding-top: 1.5rem;
     justify-content: space-around; 
 }
+
+.editUserForm {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around; 
+    border-bottom: 2px solid hsl(220, 15%, 18%);
+}
+
+.formButton {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    justify-content: space-evenly; 
+}
+
+input{
+    margin: .5rem;
+}

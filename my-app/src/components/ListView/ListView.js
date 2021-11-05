@@ -1,4 +1,4 @@
-import userData from '../userData.json';
+import userData from '../../userData.json';
 import { useState } from "react";
 import './ListView.css';
 
