@@ -1,0 +1,13 @@
+.data {
+    display: flex;
+    border-bottom: 2px solid hsl(220, 15%, 18%);
+    padding: 1rem;
+    justify-content: space-around; 
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    justify-content: space-around; 
+}

@@ -16,7 +16,6 @@ function App() {
             <ListView/>
           </Route>
           <Route path='/add'>
-            <AppHeader />
             <NewItemView/>
           </Route>
           </Switch>
