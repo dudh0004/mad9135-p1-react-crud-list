@@ -1,6 +1,6 @@
 import { useState} from 'react';
 import { v4 as uuid } from "uuid";
-import userData from '../userData.json';
+import userData from '../../userData.json';
 import { NavLink } from 'react-router-dom';
 import './NewItemView.css';
 
@@ -35,10 +35,7 @@ export default function NewItemView (){
         setUser(newUsers);
         console.log(newUsers);
         localStorage.setItem('dudh0004', JSON.stringify(newUsers))
-
     }
-    
-    
     
         return (
             <form className="newUserForm">

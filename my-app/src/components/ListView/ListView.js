@@ -23,6 +23,20 @@ export default function ListView(props) {
         setUsers(list);
     }    
 
+
+    const handleChange = (e) => {
+    
+        data.map(element => {
+            if(element.id == id){
+                console.log('matching element: ', element);
+                console.log(`${e.target.name} : ${e.target.value}`)
+                element[e.target.name] = e.target.value;
+            }
+        })
+        
+        setData(data);
+    };
+
     return (
         <div className = "main">
             <div>
@@ -42,7 +56,29 @@ export default function ListView(props) {
                             <button className="deleteButton" id={item.id} onClick={deleteUserData}>Delete</button>
                         </div>
                     </div>
-                        ) : ('')
+                        ) : (
+                            <form className="editUserForm">
+                            <div className="inputData">
+                                <p>
+                                    <label>Name:</label>
+                                    <input className="editUserName" name="name" id="name" onChange={handleChange} defaultValue = {item.name}></input>
+                                </p>
+                                <p>
+                                    <label>Email:</label>
+                                    <input className="editUserEmail" name="Email" id="Email" onChange={handleChange} defaultValue = {item.Email}></input>
+                                </p>
+                                <p>
+                                    <label>City:</label>
+                                    <input className="editUserCity" name="City" id="City" onChange={handleChange} defaultValue = {item.City}></input>
+                                </p>
+                            </div>
+                            <div className="formButton">
+                                <button>Save</button>
+                                <button>Cancel</button>
+                            </div>
+                        </form>
+
+                        )
                     }
                     </>
                 ))
