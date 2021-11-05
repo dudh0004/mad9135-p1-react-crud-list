@@ -47,6 +47,21 @@ export default function ListView(props) {
         setData(data);
     };
 
+    const noChange = (e) => {
+        let userName = document.getElementById('name').defaultValue;
+        let userEmail = document.getElementById('Email').defaultValue;
+        let userCity = document.getElementById('City').defaultValue;
+
+        let index = users.findIndex((obj => obj.id == id));
+            users = users[index];
+    
+            users.name = userName;
+            users.Email = userEmail;
+            users.City = userCity;
+            setId(0);
+    }
+
+
     return (
         <div className = "main">
             <div>
@@ -84,7 +99,7 @@ export default function ListView(props) {
                             </div>
                             <div className="formButton">
                                 <button onClick={onSave}>Save</button>
-                                <button>Cancel</button>
+                                <button onClick={noChange}>Cancel</button>
                             </div>
                         </form>
 
