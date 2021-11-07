@@ -8,24 +8,20 @@
 .button {
     display: flex;
     flex-direction: column;
-    padding-top: 1.5rem;
+    width: 6rem;
     justify-content: space-around; 
 }
 
-.editUserForm {
-    display: flex;
-    padding: 1rem;
-    justify-content: space-around; 
-    border-bottom: 2px solid hsl(220, 15%, 18%);
+p{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
 }
 
-.formButton {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1.5rem;
-    justify-content: space-evenly; 
-}
-
-input{
-    margin: .5rem;
+button {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border-radius: .5rem;
+    background-color: rgb(238, 201, 213);
 }
