@@ -13,5 +13,16 @@
 }
 
 input{
-    margin: .5rem;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}   
+
+
+.editUserCity{
+    margin-left: 1.5rem;
+}
+
+.editUserEmail {
+    margin-left: .7rem;
 }
