@@ -39,7 +39,7 @@ export default function NewItemView (){
     
         return (
             <form className="newUserForm">
-                <legend>Add a New User</legend>
+                <legend>Add New User</legend>
                 <div className="mainSection">
                     <div className="inputSection"> 
                     <div className="newUserName">
