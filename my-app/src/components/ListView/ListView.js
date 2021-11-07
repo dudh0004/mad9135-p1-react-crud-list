@@ -1,4 +1,5 @@
 import userData from '../../userData.json';
+import ListItem from '../ListItem/ListItem';
 import { useState } from "react";
 import './ListView.css';
 
@@ -88,26 +89,7 @@ export default function ListView(props) {
                         </div>
                     </div>
                         ) : (
-                            <form className="editUserForm">
-                                <div className="inputData">
-                                    <p>
-                                        <label>Name:</label>
-                                        <input className="editUserName" name="name" id="name" onChange={handleChange} defaultValue = {item.name}></input>
-                                    </p>
-                                    <p>
-                                        <label>Email:</label>
-                                        <input className="editUserEmail" name="Email" id="Email" onChange={handleChange} defaultValue = {item.Email}></input>
-                                    </p>
-                                    <p>
-                                        <label>City:</label>
-                                        <input className="editUserCity" name="City" id="City" onChange={handleChange} defaultValue = {item.City}></input>
-                                    </p>
-                                </div>
-                                <div className="formButton">
-                                    <button onClick={onSave}>Save</button>
-                                    <button onClick={noChange}>Cancel</button>
-                                </div>
-                            </form>
+                            <ListItem item = {item} save = {onSave} change = {handleChange} noChange = {noChange}/>
                             )
                     }
                     </>
