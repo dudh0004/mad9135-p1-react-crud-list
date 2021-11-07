@@ -40,24 +40,30 @@ export default function NewItemView (){
         return (
             <form className="newUserForm">
                 <legend>Add a New User</legend>
-                <div className="newUserName">
-                    <label>Name:</label>
-                    <input type="text" name="name" onChange={addChange} placeholder="Enter Name" required />
+                <div className="mainSection">
+                    <div className="inputSection"> 
+                    <div className="newUserName">
+                        <label>Name:</label>
+                        <input type="text" name="name" onChange={addChange} placeholder="Enter Name" required />
+                    </div>
+                    <div className="newUserEmail">
+                        <label>Email:</label>
+                        <input type="text" name="Email" onChange={addChange} placeholder="Enter Email" required/>
+                    </div>
+                    <div className="newUserCity">
+                        <label>City:</label>
+                        <input type="text" name="City" onChange={addChange} placeholder="Enter City" required/>
+                    </div>
                 </div>
-                <div className="newUserEmail">
-                    <label>Email:</label>
-                    <input type="text" name="Email" onChange={addChange} placeholder="Enter Email" required/>
+                <div className="buttonSection">
+                    <NavLink to="/">
+                        <button onClick={onSubmit} className="saveButton">Save</button>
+                    </NavLink>
+                    <NavLink to="/">
+                        <button className="cancelButton">Cancel</button>
+                    </NavLink>
                 </div>
-                <div className="newUserCity">
-                    <label>City:</label>
-                    <input type="text" name="City" onChange={addChange} placeholder="Enter City" required/>
                 </div>
-                <NavLink to="/">
-                    <button onClick={onSubmit} className="saveButton">Save</button>
-                </NavLink>
-                <NavLink to="/">
-                    <button className="cancelButton">Cancel</button>
-                </NavLink>
                 </form>
         )
     }

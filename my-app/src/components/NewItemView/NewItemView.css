@@ -1,0 +1,17 @@
+.mainSection {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around; 
+    border-bottom: 2px solid hsl(220, 15%, 18%);
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    justify-content: space-between; 
+} 
+
+input{
+    margin: .5rem;
+} 
