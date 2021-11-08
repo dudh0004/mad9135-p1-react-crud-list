@@ -48,7 +48,7 @@ export default function NewItemView (){
                     </div>
                     <div className="newUserEmail">
                         <label>Email:</label>
-                        <input type="text" name="Email" onChange={addChange} placeholder="Enter Email" required/>
+                        <input type="email" name="Email" onChange={addChange} placeholder="Enter Email" required/>
                     </div>
                     <div className="newUserCity">
                         <label>City:</label>
