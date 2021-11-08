@@ -36,6 +36,7 @@ export default function NewItemView (){
         console.log(newUsers);
         localStorage.setItem('dudh0004', JSON.stringify(newUsers))
     }
+
     
         return (
             <form className="newUserForm">
@@ -44,15 +45,15 @@ export default function NewItemView (){
                     <div className="inputSection"> 
                     <div className="newUserName">
                         <label>Name:</label>
-                        <input type="text" name="name" onChange={addChange} placeholder="Enter Name" required />
+                        <input type="text" name="name" id="name" onChange={addChange} placeholder="Enter Name" required />
                     </div>
                     <div className="newUserEmail">
                         <label>Email:</label>
-                        <input type="email" name="Email" onChange={addChange} placeholder="Enter Email" required/>
+                        <input type="email" name="Email" id="Email" onChange={addChange} placeholder="Enter Email" required/>
                     </div>
                     <div className="newUserCity">
                         <label>City:</label>
-                        <input type="text" name="City" onChange={addChange} placeholder="Enter City" required/>
+                        <input type="text" name="City" id="City" onChange={addChange} placeholder="Enter City" required/>
                     </div>
                 </div>
                 <div className="buttonSection">
