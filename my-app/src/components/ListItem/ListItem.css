@@ -26,3 +26,11 @@ input{
 .editUserEmail {
     margin-left: .7rem;
 }
+
+.saveButton {
+    background-color: green;
+}
+
+.cancelButton {
+    background-color: yellow;
+}

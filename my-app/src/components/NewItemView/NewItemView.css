@@ -1,9 +1,14 @@
+form {
+    margin-top: 30px;
+}
+
+
 .mainSection {
     display: flex;
     padding: 1rem;
     justify-content: space-evenly; 
     padding: 1rem;
-    border-bottom: 2px solid hsl(220, 15%, 18%);
+    border-bottom: 2px solid green;
 }
 
 .buttonSection {
@@ -33,4 +38,9 @@ legend {
 
 .newUserEmail input{
     margin-left: .7rem;
+}
+
+label {
+    color: green;
+    font-weight: 600;
 }

@@ -79,9 +79,9 @@ export default function ListView(props) {
                     (
                     <div className="data" id={item.id}>
                         <div className="paragraph">
-                            <p className={item.id}>{item.name}</p>
-                            <p>{item.Email}</p>
-                            <p>{item.City}</p>
+                            <p className={item.id}><strong>Name: </strong>{item.name}</p>
+                            <p><strong>Email: </strong>{item.Email}</p>
+                            <p><strong>City: </strong>{item.City}</p>
                         </div>
                         <div className="button">
                             <button className="editButton" id={item.id} onClick={editUser}>Edit</button>

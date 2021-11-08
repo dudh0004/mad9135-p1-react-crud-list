@@ -18,8 +18,8 @@ export default function ListItem ({item, save, change, noChange}) {
             </p>
         </div>
         <div className="formButton">
-            <button onClick={save}>Save</button>
-            <button onClick={noChange}>Cancel</button>
+            <button className="saveButton" onClick={save}>Save</button>
+            <button className="cancelButton" onClick={noChange}>Cancel</button>
         </div>
     </form>
     )

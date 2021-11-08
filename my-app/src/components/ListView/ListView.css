@@ -1,6 +1,6 @@
 .data {
     display: flex;
-    border-bottom: 2px solid hsl(220, 15%, 18%);
+    border-bottom: 2px solid gray;
     padding: 1rem;
     justify-content: space-around; 
 }
@@ -14,14 +14,25 @@
 
 p{
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: #004B49;
 }
 
 button {
-    width: 6rem;
-    height: 2rem;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
     border-radius: .5rem;
-    background-color: rgb(238, 201, 213);
+
+}
+
+.editButton {
+    background-color: #004B49;
+    color: white;
+    border: 1px solid  #004B49;
+}
+
+.deleteButton{
+    background-color: rgb(238, 38, 38);
+    border: 1px solid  rgb(238, 38, 38);
+    color:white;
 }

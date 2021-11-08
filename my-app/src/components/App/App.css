@@ -1,14 +1,5 @@
 .App {
-  width: 50%;
-  display: block;
-  position: absolute;
-  left: 30%;
-  top: 6%;
-  border-radius: 5px;
-  max-width: 50rem;
-  min-width: 30rem;
-  border: 2px solid hsl(220, 15%, 18%);
-  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+  background-color: white;
 }
 
 
