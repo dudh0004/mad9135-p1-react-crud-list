@@ -1,6 +1,6 @@
 .data {
     display: flex;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #004B49;
     padding: 1rem;
     justify-content: space-around; 
 }
@@ -8,7 +8,6 @@
 .button {
     display: flex;
     flex-direction: column;
-    width: 6rem;
     justify-content: space-around; 
 }
 
@@ -34,4 +33,43 @@ button {
     background-color: rgb(238, 38, 38);
     border: 1px solid  rgb(238, 38, 38);
     color:white;
+}
+
+
+@media screen and (max-width: 400px) {
+    .data {
+        display: block;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) { 
+
+    .data {
+        display: block;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+    }
 }

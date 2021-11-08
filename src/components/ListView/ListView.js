@@ -74,7 +74,7 @@ export default function ListView(props) {
             <div>
                 {
                     users.map((item) => (
-                    <>
+                    <div>
                     {(((id == 0) && (!editClicked)) || !(item.id == id)) ? 
                     (
                     <div className="data" id={item.id}>
@@ -92,7 +92,7 @@ export default function ListView(props) {
                             <ListItem item = {item} save = {onSave} change = {handleChange} noChange = {noChange}/>
                             )
                     }
-                    </>
+                    </div>
                 ))
                 }    
             </div>

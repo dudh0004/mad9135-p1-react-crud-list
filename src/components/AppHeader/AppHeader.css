@@ -21,3 +21,8 @@ h3{
 .App-logo {
     color: white;
 }
+
+.fa {
+    padding: .5rem;
+    font-size: medium;
+}

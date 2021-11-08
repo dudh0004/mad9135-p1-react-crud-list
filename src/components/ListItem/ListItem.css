@@ -47,3 +47,32 @@ p label {
     color: #004B49;
     font-weight: 700;
 }
+
+@media screen and (max-width: 400px) {
+    .editUserForm {
+        display: block;
+    }
+
+    .formButton {
+        flex-direction: row;
+    }
+
+    .inputData input {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .editUserForm {
+        display: block;
+    }
+
+    .formButton {
+        flex-direction: row;
+    }
+
+    .inputData input {
+        margin-left: 0px;
+        width: 17rem;
+    }
+}

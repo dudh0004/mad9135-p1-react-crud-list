@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header>
-      <AppHeader />
-    </header>
+        <AppHeader />
+      </header>
     <main>
       <Switch>
           <Route path="/" exact>

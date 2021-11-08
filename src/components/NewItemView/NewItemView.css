@@ -57,6 +57,7 @@ input:focus {
 }
 
 @media screen and (max-width: 400px) {
+
     .mainSection {
         display: block;
     }
@@ -68,5 +69,30 @@ input:focus {
 
     .inputSection input{
         margin-left: 0px;
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .mainSection {
+        display: block;
+    }
+
+    .buttonSection {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .inputSection input{
+        width: 20rem;
+    }
+
+    .newUserCity input{
+        margin-left: 1.7rem;
+    }
+    
+    .newUserEmail input{
+        margin-left: .7rem;
     }
 }

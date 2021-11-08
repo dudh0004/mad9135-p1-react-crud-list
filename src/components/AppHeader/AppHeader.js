@@ -8,7 +8,7 @@ export default function AppHeader(props) {
         <img src={logo} className="App-logo" alt="React logo" />
         <h1>User List</h1>
         <h3>
-            <NavLink className="active" to={{pathname: '/add'}}>New Item </NavLink>
+            <i className="fa fa-plus"></i><NavLink className="active" to={{pathname: '/add'}}>New Item </NavLink>
         </h3>
         </header>
     )
