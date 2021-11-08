@@ -15,7 +15,10 @@
 input{
     font-size: 1rem;
     padding: .5rem;
+    border: 2px solid rgb(195, 195, 195);
     border-radius: .5rem;
+    color: #004B49;
+
 }   
 
 
@@ -28,9 +31,19 @@ input{
 }
 
 .saveButton {
-    background-color: green;
+    background-color: #004B49;
+    color: white;
+    border: 1px solid  #004B49;
+
 }
 
 .cancelButton {
-    background-color: yellow;
+    background-color: rgb(42, 167, 129);
+    color: white;
+    border: 1px solid rgb(42, 167, 129);
+}
+
+p label {
+    color: #004B49;
+    font-weight: 700;
 }
